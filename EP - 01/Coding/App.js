@@ -19,11 +19,13 @@ const heading = React.createElement(
     ])
 );//what to display?
 
-
+// console.log(heading);
 
 //Rendering react
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+
+// console.log(root);
 
 
 /*
