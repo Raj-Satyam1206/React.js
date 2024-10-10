@@ -24,12 +24,18 @@ A. Object
 */
 
 
+
+
+
+
+
+/*
 <h1>Hello above root</h1>
 <div id="root">
     <h1>Satyam is here!</h1>
 </div>
 <h1>Hello below root</h1>
-
+*/
 
 /*
     The content of "root" will be replaced with whatever is rendered inside root in APP.js . It is not appended but replaced.
