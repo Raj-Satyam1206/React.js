@@ -141,7 +141,7 @@ A:
 - They are necessary for the `core functionality` of your application.
 **Example**: If you're building a web app with React, React itself would be listed under dependencies because it's essential for your app to work properly.
 
-<br/>  
+ 
 `devDependencies`  
 - Packages listed under devDependencies are used for `development purposes only`.
 - They are tools, libraries, or other packages that help you during the development process, such as build tools, and testing frameworks.
@@ -188,11 +188,11 @@ A:
 A:  
 - `package.json` is a metadata file for your Node.js project.  
 - It contains various information about your project, such as:  
-    name  
-    version  
-    description  
-    scripts  
-    the list of dependencies with their generic versions  
+    &emsp;name  
+    &emsp;version  
+    &emsp;description  
+    &emsp;scripts  
+    &emsp;list of dependencies with their generic versions  
     
 - Developers typically manage the dependencies in the `dependencies` and `devDependencies` sections of the package.json file.  
 - The dependencies section lists the packages that your application needs to run in production.  
