@@ -8,6 +8,9 @@ A:
 - It helps developers find and use ready-made pieces of code (packages) made by other people. These packages add special features to websites or make it easier to write code.  
 - With npm, programmers can easily get these packages and use them in their own projects without having to build everything from scratch.
 
+<br/>
+<br/>
+
 ## Q: What is a `bundler`?
 A:  
 - A `bundler` is a tool used in web development to `combine multiple separate files`, such as JavaScript, CSS, and images, `into a smaller number of optimized files`.  
@@ -19,17 +22,26 @@ A:
         
 - Webpack, Parcel, and Vite are examples of popular bundlers used in web development.
 
+<br/>
+<br/>
+
 ## Q: What's `Webpack`? Why do we need it?
 A:  
-- Webpack is a `bundler tool` that bundles your web project's files together.  
+- Webpack is a `module bundler` that bundles your web project's files together.  
 - It `optimizes and organizes JavaScript, CSS, images`, and more, making them load faster for websites.  
 - It manages file dependencies, converts code for different browsers, and uses plugins to enhance performance.  
 - Webpack helps in web development by `packaging, optimizing, and simplifying the way files are delivered to browsers`.
+
+<br/>
+<br/>
 
 ## Q How does `Webpack convert code for different browsers`?
 A:  
 - `Webpack` doesn't directly convert code for various browsers, but it works with tools like Babel.  
 - `Babel` transforms modern JavaScript code syntax into older versions that older browsers can understand.  
+
+<br/>
+<br/>
 
 ## Q What is `Babel`?
 A:  
@@ -41,11 +53,17 @@ A:
         - Generating equivalent code in an older syntax.  
 - This process is commonly known as `transpilation`.
 
+<br/>
+<br/>
+
 ## Q What is `Parcel`?
 A:  
-- `Parcel` is an `open-source web application bundler` that simplifies the process of building and packaging web projects.  
+- `Parcel` is an `open-source web application bundler` that simplifies the process of `building and packaging web projects`.  
 - Unlike Webpack, it offers a `zero-config setup`, automatically handling various file types without complex configurations.  
 - Used for smaller projects or developers looking for an easy-to-use bundling solution that requires minimal setup.
+
+<br/>
+<br/>
 
 ## Q What is the `difference between Webpack and Parcel`?
 A:  
@@ -73,6 +91,9 @@ A:
 
  Webpack offers more `control and customization`, while Parcel prioritizes `simplicity and speed`.
 
+<br/>
+<br/>
+
 ## Q What is `.parcel-cache`?
 A:  
 - The .parcel-cache directory is created by the Parcel bundler when it `processes and builds your web project`.  
@@ -82,6 +103,9 @@ A:
 - If we make any `code changes and save the application`, another build will be triggered which might take even less time than the previous build.  
 - This reduction of time is due to parcel cache. `Parcel immediately loads the code from the cache every time` there is a subsequent build.  
 - On the very first build parcel creates a folder .parcel-cache where it stores the caches in binary codeformat.
+
+<br/>
+<br/>
 
 ## Q What is `npx`?
 A:  
@@ -106,11 +130,14 @@ Parcel will start processing your project, bundling and optimizing your files. I
 ### View the Result:
 `Once Parcel has finished bundling your project, it will provide you with a local development server address` (usually `http://localhost:1234` by default). Open this address in your web browser to see your bundled application.
 
+<br/>
+<br/>
+
 ## Q What is the difference between `devDependencies` and `dependencies`?
 A:  
 - `dependencies`  
 Packages listed under dependencies are the ones that your `application needs to run correctly in production`.  
-These are the dependencies that your application relies on to function as intended when it's in the hands of end-users.  
+These are the dependencies that your application relies on,  to function as intended when it's in the hands of end-users.  
 They are necessary for the `core functionality` of your application.
 **Example**: If you're building a web app with React, React itself would be listed under dependencies because it's essential for your app to work properly.
 
@@ -121,11 +148,17 @@ These dependencies are `not required for your application to run in a production
 **Example**: A `testing library like Jest or a development server like Parcel` would be listed under devDependencies because they are used for development and testing but are not necessary for the deployed application.
 
 
+<br/>
+<br/>
+
 ## Q What is `Tree Shaking`?
 A:  
 - `Tree shaking` is a technique used in modern JavaScript build tools to `eliminate unused code from your final bundle`.  
 - Optimize the size of JavaScript bundles, resulting in smaller file sizes and faster loading times for your web applications.  
 
+
+<br/>
+<br/>
 
 ## Q What is `Hot Module Replacement`?
 A: `HMR` is a technique that allows developers to `make changes to their codebase` and see those changes `instantly reflected` in the running application `without requiring a full page refresh or a manual reload of the browser`.
@@ -136,6 +169,8 @@ A: `HMR` is a technique that allows developers to `make changes to their codebas
 
 `Selective Updates`: HMR is capable of updating only the changed modules, which helps in reducing the need for a full page reload and speeds up the development process.
 
+<br/>
+<br/>
 
 ## Q What is `.gitignore`? What should `we add` and `not add` into it?
 A:  
@@ -145,6 +180,9 @@ A:
     - contain `sensitive information`,  
     - or are `not relevant to the project's version history`.
 
+<br/>
+<br/>
+
 ## Q What is the difference between `package.json` and `package-lock.json`?
 A:  
 - `package.json` is a metadata file for your Node.js project.  
@@ -153,20 +191,22 @@ A:
     version  
     description  
     scripts  
-    the list of dependencies with their versions  
+    the list of dependencies with their generic versions  
     
 - Developers typically manage the dependencies in the `dependencies` and `devDependencies` sections of the package.json file.  
-- The dependencies section lists the packages that your application needs to run.  
+- The dependencies section lists the packages that your application needs to run in production.  
 - The devDependencies section lists packages that are only required during development, such as testing frameworks or build tools.
 
 
 `package-lock.json`  is a file generated by npm that provides the `exact versions of the dependencies` installed in your project.  
 - It includes information about the:
-    - versions of the dependencies,  
+    - exact versions of the dependencies,  
     - their dependencies (sub-dependencies),  
     - the specific commit hashes for those versions.  
 - This helps ensure that your project uses the same dependency versions across different environments and installations.
 
+<br/>
+<br/>
 
 ## Q  Why should I not modify package-lock.json?
 A: `package-lock.json` is automatically generated by npm when you install or update dependencies in your Node.js project. It provides the exact versions of dependencies and their dependencies that were installed. Modifying package-lock.json directly is generally not recommended for several reasons:
@@ -175,16 +215,24 @@ A: `package-lock.json` is automatically generated by npm when you install or upd
 
 `Collaboration`: When working in a team, each member might have their own local changes to package-lock.json. If you manually modify it, you might cause conflicts when trying to merge changes from different team members. This can be a source of confusion and difficulty during collaboration.
 
+<br/>
+<br/>
+
 ## Q What is node_modules? Is it a good idea to push that on git?
 A: `node_modules` is a directory that is automatically created by Node.js and npm when you install dependencies for your project. It contains all the packages (dependencies) that your project relies on.
 
 The `node_modules` directory can become quite large, especially for projects with many dependencies. It contains all the code and files needed to make the external packages work within your project. Because of its size and the fact that it can be generated from the package.json and package-lock.json files, it's generally not considered a good practice to include the node_modules directory in your version control system (e.g., Git). 
 
+<br/>
+<br/>
 
 ## Q What is `browserlists`?
-A: `browserslist` is a configuration file and query syntax used by various front-end tools and libraries to define which browsers and browser versions your project should support.  
-Browserslist is a tool that specifies which browsers should
-be supported/compatible in your frontend app.
+A:  
+- `browserslist` is a configuration file and query syntax used by various front-end tools and libraries to define which browsers and browser versions your project should support.
+- Browserslist is a tool that specifies which browsers should be supported/compatible in your frontend app.
+
+<br/>
+<br/>
 
 
 ## Q Read about: ^ - caret and ~ - tilde
