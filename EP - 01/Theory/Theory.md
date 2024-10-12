@@ -86,7 +86,7 @@ Angular is used for building dynamic and feature-rich web applications.
 A:  
 - &nbsp;`CDN` stands for Content Delivery Network.  
 - &nbsp;It is a `network of distributed servers` located in various data centers around the world.  
-- &nbsp;The primary purpose of a CDN is to deliver web content, such as images, videos, scripts, stylesheets, and other static or dynamic resources, to users more efficiently and with higher performance.  
+- &nbsp;The primary purpose of a CDN is to `deliver web content`, such as images, videos, scripts, stylesheets, and other static or dynamic resources, to users more efficiently and with higher performance.  
 - &nbsp;A CDN solves this problem by `replicating the website's content on multiple servers` spread across various geographic locations.When a user requests a specific piece of content, the CDN automatically routes the request to the nearest server in its network.  
 - &nbsp;This way, the content is delivered from a server closer to the user, reducing latency and ensuring faster loading times.
 
@@ -108,7 +108,7 @@ A:
 
 ## Q: What is `crossorigin in script tag`?
 A:  
-The `crossorigin` attribute enables the `Cross-Origin Resource Sharing(CORS)` for loading external JavaScript files from a different origin that the hosting web page.  
+The `crossorigin` attribute enables the `Cross-Origin Resource Sharing(CORS)` for `loading external JavaScript files` from a different origin that the hosting web page.  
 When a web page includes resources from different domains, it can introduce security and privacy concerns. Modern web browsers implement the same-origin policy, which restricts web pages from making requests to a different domain than the one that served the web page. This policy is designed to prevent malicious websites from accessing sensitive data from other domains without permission.
 
 <br>
@@ -119,8 +119,8 @@ When a web page includes resources from different domains, it can introduce secu
 A:  
 `React` is the core library of the React ecosystem.  
 It is a JavaScript library for :  
-- &emsp;building user interfaces,  
-- &emsp;focusing on creating reusable UI components and   
+- &emsp;building `user interfaces`,  
+- &emsp;focusing on creating `reusable UI components` and   
 - &emsp;efficiently managing their state.
 
  React provides the tools and infrastructure to define components, handle their lifecycle, and manage state changes.
@@ -129,8 +129,8 @@ It is a JavaScript library for :
 <br>
 <br>
   
-`ReactDOM` is a package that provides the integration between React and the DOM (Document Object Model).  
-It is designed for web applications, as it handles rendering React components to the HTML DOM.  
+`ReactDOM` is a package that provides the `integration between React and the DOM` (Document Object Model).  
+It is designed for web applications, as it handles `rendering React components to the HTML DOM`.  
 When you want to display React components in the browser, you need ReactDOM to take care of the rendering process.  
 It provides methods like **`ReactDOM.render()`** to attach a React component to a specific HTML element in the DOM.
 
